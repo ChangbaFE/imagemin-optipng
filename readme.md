@@ -1,33 +1,30 @@
-# imagemin-optipng [![Build Status](http://img.shields.io/travis/imagemin/imagemin-optipng.svg?style=flat)](https://travis-ci.org/imagemin/imagemin-optipng)
+# imagemin-optipng-changba [![Build Status](http://img.shields.io/travis/ChangbaFE/imagemin-optipng.svg?style=flat)](https://travis-ci.org/ChangbaFE/imagemin-optipng)
 
 > Imagemin plugin for OptiPNG
-
 
 ## Install
 
 ```
-$ npm install imagemin-optipng
+$ npm install imagemin-optipng-changba
 ```
-
 
 ## Usage
 
 ```js
 const imagemin = require('imagemin');
-const imageminOptipng = require('imagemin-optipng');
+const imageminOptipng = require('imagemin-optipng-changba');
 
 (async () => {
-	await imagemin(['images/*.png'], {
-		destination: 'build/images',
-		plugins: [
-			imageminOptipng()
-		]
-	});
+  await imagemin(['images/*.png'], {
+    destination: 'build/images',
+    plugins: [
+      imageminOptipng()
+    ]
+  });
 
-	console.log('Images optimized!');
+  console.log('Images optimized!');
 })();
 ```
-
 
 ## API
 

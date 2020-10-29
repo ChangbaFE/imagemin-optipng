@@ -1,9 +1,9 @@
 {
-	"name": "imagemin-optipng",
+	"name": "imagemin-optipng-changba",
 	"version": "8.0.0",
 	"description": "Imagemin plugin for OptiPNG",
 	"license": "MIT",
-	"repository": "imagemin/imagemin-optipng",
+	"repository": "ChangbaFE/imagemin-optipng",
 	"engines": {
 		"node": ">=10"
 	},
@@ -25,7 +25,7 @@
 	"dependencies": {
 		"exec-buffer": "^3.0.0",
 		"is-png": "^2.0.0",
-		"optipng-bin": "^7.0.0"
+		"optipng-changba": "^7.0.0"
 	},
 	"devDependencies": {
 		"ava": "^3.8.0",
