@@ -1,6 +1,6 @@
 {
 	"name": "imagemin-optipng-changba",
-	"version": "8.0.0",
+	"version": "8.1.0",
 	"description": "Imagemin plugin for OptiPNG",
 	"license": "MIT",
 	"repository": "ChangbaFE/imagemin-optipng",
