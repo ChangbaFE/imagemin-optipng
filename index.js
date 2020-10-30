@@ -10,6 +10,7 @@ module.exports = options => async buffer => {
     colorTypeReduction: true,
     paletteReduction: true,
     interlaced: false,
+    autoInterlacedMinSize: 0,
     errorRecovery: true,
     ...options
   };
@@ -20,6 +21,10 @@ module.exports = options => async buffer => {
 
   if (!isPng(buffer)) {
     return buffer;
+  }
+
+  if (options.autoInterlacedMinSize > 0 && buffer.length > options.autoInterlacedMinSize) {
+    options.interlaced = true;
   }
 
   const arguments_ = [

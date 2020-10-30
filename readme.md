@@ -83,6 +83,13 @@ Default: `false`
 
 Enable [Adam7](https://en.wikipedia.org/wiki/Adam7_algorithm) PNG interlacing on any images that are processed. Interlaced images look better when they're loaded partially, but usually interlace makes compression less efficient. Set to `undefined` or `null` to keep the same interlacing as the input image.
 
+##### autoInterlacedMinSize
+
+Type: `number`<br>
+Default: `0`
+
+If this value is greater than 0, it means that files larger than this size will be automatically interlaced. The unit is byte.
+
 ##### errorRecovery
 
 Type: `boolean`<br>
